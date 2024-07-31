@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "npx mocha index.js"
+  },
+  "dependencies": {
+    "mocha": "^10.4.0",
+    "selenium-webdriver": "^4.21.0"
+  }
+}

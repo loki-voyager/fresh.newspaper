@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-disabled {
+  @apply pointer-events-none;
+}
+
+html,
+body {
+  @apply min-w-full min-h-full flex bg-[#EBDBB2] bg-opacity-40 text-white;
+}
+
+body {
+  @apply flex-col;
+}
+
+header {
+  @apply p-2 flex-initial bg-opacity-40;
+}
+
+main {
+  @apply flex-1 py-4;
+}
+
+nav {
+  @apply flex gap-1;
+}
+
+h1 {
+  @apply text-2xl inline-flex gap-1 self-start p-1 rounded bg-amber-400 bg-opacity-40;
+}
+
+h2 {
+  @apply text-xl inline-flex gap-1 self-start p-1 rounded bg-black bg-opacity-40 text-white;
+}
+
+.wrapper {
+  @apply max-w-5xl h-full mx-auto p-1 flex flex-col gap-1 rounded bg-black bg-opacity-40;
+}
+
+button,
+.button {
+  @apply rounded p-1 ease-linear duration-200 flex items-center bg-black bg-opacity-20 hover:bg-opacity-60;
+}
+
+button.active,
+.button.active {
+  @apply bg-amber-400 bg-opacity-40 pointer-events-none;
+}
+
+.home {
+  @apply flex flex-col gap-1;
+}
+
+.shape-profile {
+  @apply flex flex-col gap-1;
+}
+
+.profile {
+  @apply flex flex-col gap-1;
+}
+
+.line {
+  @apply flex gap-1;
+}
+
+.in {
+  @apply bg-lime-400 bg-opacity-40;
+}
+
+.out {
+  @apply bg-rose-600 bg-opacity-40;
+}
+.inout {
+  @apply bg-yellow-400 bg-opacity-40;
+}
+.pic-col,
+.pic-col > * {
+  @apply flex flex-row gap-1 flex-wrap;
+}
+
+.pic-col>img{
+  @apply flex-1
+}
+
+.pic-col img {
+  @apply max-h-[40vh] h-auto rounded;
+}
+
+.user-info {
+  @apply self-center flex flex-col gap-1;
+}
+
+form {
+  @apply flex flex-col flex-1 gap-1 rounded justify-center;
+}
+
+input,
+textarea {
+  @apply bg-black bg-opacity-40 rounded p-1 flex-1;
+}
+
+.input_file {
+  @apply relative inline-block;
+}
+
+.input_file > input[type="file"] {
+  @apply hidden;
+}
+
+.news-list {
+  @apply flex flex-col gap-4;
+}
+
+.author {
+  @apply text-xs;
+}
+
+.grades {
+  @apply inline-flex  gap-1;
+}
+
+.error {
+  @apply flex flex-col gap-1 self-center text-center;
+}
+.error > div {
+  @apply flex gap-1 justify-center;
+}
+.pagination {
+  @apply bg-black bg-opacity-40 p-1 rounded flex gap-1;
+}
+
+.comments {
+  @apply flex flex-col gap-1;
+}
+
+.left {
+  @apply flex justify-end;
+}
+
+.apart {
+  @apply flex justify-between;
+}
+
+.mention {
+  @apply bg-rose-600 p-1  rounded;
+}
+
+.owner {
+  @apply bg-lime-600 p-1  rounded;
+}
+
+.news-form {
+  @apply min-h-[80vh];
+}
+
+.deleted {
+  @apply opacity-40;
+}
+
+.news {
+  @apply flex flex-col gap-1 items-start;
+}
+
+.button.news {
+  @apply bg-black bg-opacity-0 border border-[#EBDBB2] border-opacity-40 hover:bg-opacity-40 hover:border-opacity-40 hover:border-lime-400 ease-linear duration-200;
+}
+
+.button.news > a {
+  @apply flex flex-col gap-1;
+}
+
+.com-form {
+  @apply min-h-[20vh];
+}
+
+.com {
+  @apply inline-flex gap-1 bg-black bg-opacity-40 rounded p-1;
+}
+
+.com > div {
+  @apply flex-1;
+}
+
+.frame {
+  @apply flex flex-col gap-1;
+}
+.news.noti {
+  @apply bg-opacity-40;
+}
+.news.noti.readed {
+  @apply opacity-20;
+}
+.noti {
+  @apply flex gap-2;
+}
+.noti > button:nth-child(1) {
+  @apply flex-1;
+}
+.noti > .com_body {
+  @apply text-left;
+}
+.user {
+  @apply flex flex-col gap-1 bg-black bg-opacity-40 p-1 rounded;
+}
+.users-list {
+  @apply flex gap-1;
+}
+.users-list > .user {
+  @apply flex-1;
+}
